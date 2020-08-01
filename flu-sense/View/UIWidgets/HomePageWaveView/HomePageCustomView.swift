@@ -21,8 +21,8 @@ class HomePageCustomView: UIView {
         return screenSize.width
     }
     
-
-
+    
+    
     override func draw(_ rect: CGRect) {
         let red = Asset.red.color
         red.setFill()
@@ -40,24 +40,26 @@ class HomePageCustomView: UIView {
     }
     
     func configure(){
-//        fromNib()
+        //        fromNib()
         setBezierPath()
+        addBackground(imageName: Asset.covid.name, contentMode: .scaleAspectFill)
     }
     
     func setBezierPath(){
         let path = UIBezierPath()
-           path.move(to: CGPoint(x: 0.0, y: 0.0))
+        path.move(to: CGPoint(x: 0.0, y: 0.0))
         path.addLine(to: CGPoint(x: screenWidth , y: 0))
         path.addLine(to: CGPoint(x: screenWidth , y: screenHeight * 0.3))
         path.addCurve(to: CGPoint(x: 0, y: screenHeight * 0.4), controlPoint1: CGPoint(x:  screenWidth * 0.7, y: screenHeight * 0.1), controlPoint2: CGPoint(x:  screenWidth * 0.3, y: screenHeight * 0.5))
-
-           
-           path.close()
         
-           let shapeLayer = CAShapeLayer()
-           shapeLayer.path = path.cgPath
         
-           self.backgroundColor = UIColor.orange
-           self.layer.mask = shapeLayer    }
+        
+        path.close()
+        
+        let shapeLayer = CAShapeLayer()
+        shapeLayer.path = path.cgPath
+        
+        self.backgroundColor = UIColor.orange
+        self.layer.mask = shapeLayer    }
     
 }
