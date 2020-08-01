@@ -15,6 +15,9 @@
 		4B3143E824D5E55300A88068 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3143E624D5E55300A88068 /* LaunchScreen.storyboard */; };
 		4B3143F324D5E55300A88068 /* flu_senseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3143F224D5E55300A88068 /* flu_senseTests.swift */; };
 		4B3143FE24D5E55300A88068 /* flu_senseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3143FD24D5E55300A88068 /* flu_senseUITests.swift */; };
+		4BA0230E24D5F7EF00397B3D /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0230C24D5F7EF00397B3D /* Assets.swift */; };
+		4BA0230F24D5F7EF00397B3D /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0230D24D5F7EF00397B3D /* Strings.swift */; };
+		4BA0231224D5F89400397B3D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BA0231024D5F89400397B3D /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		4B3143F924D5E55300A88068 /* flu-senseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "flu-senseUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B3143FD24D5E55300A88068 /* flu_senseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flu_senseUITests.swift; sourceTree = "<group>"; };
 		4B3143FF24D5E55300A88068 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4BA0230C24D5F7EF00397B3D /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		4BA0230D24D5F7EF00397B3D /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		4BA0231124D5F89400397B3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +105,10 @@
 		4B3143DA24D5E55100A88068 /* flu-sense */ = {
 			isa = PBXGroup;
 			children = (
+				4BA0230B24D5F69300397B3D /* Generated */,
 				4B3143DB24D5E55100A88068 /* AppDelegate.swift */,
 				4B3143DD24D5E55100A88068 /* SceneDelegate.swift */,
+				4BA0231024D5F89400397B3D /* Localizable.strings */,
 				4B3143DF24D5E55100A88068 /* ViewController.swift */,
 				4B3143E124D5E55100A88068 /* Main.storyboard */,
 				4B3143E424D5E55300A88068 /* Assets.xcassets */,
@@ -126,6 +134,15 @@
 				4B3143FF24D5E55300A88068 /* Info.plist */,
 			);
 			path = "flu-senseUITests";
+			sourceTree = "<group>";
+		};
+		4BA0230B24D5F69300397B3D /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				4BA0230C24D5F7EF00397B3D /* Assets.swift */,
+				4BA0230D24D5F7EF00397B3D /* Strings.swift */,
+			);
+			path = Generated;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B3143E824D5E55300A88068 /* LaunchScreen.storyboard in Resources */,
+				4BA0231224D5F89400397B3D /* Localizable.strings in Resources */,
 				4B3143E524D5E55300A88068 /* Assets.xcassets in Resources */,
 				4B3143E324D5E55100A88068 /* Main.storyboard in Resources */,
 			);
@@ -261,6 +279,8 @@
 			files = (
 				4B3143E024D5E55100A88068 /* ViewController.swift in Sources */,
 				4B3143DC24D5E55100A88068 /* AppDelegate.swift in Sources */,
+				4BA0230F24D5F7EF00397B3D /* Strings.swift in Sources */,
+				4BA0230E24D5F7EF00397B3D /* Assets.swift in Sources */,
 				4B3143DE24D5E55100A88068 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,6 +331,14 @@
 				4B3143E724D5E55300A88068 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		4BA0231024D5F89400397B3D /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4BA0231124D5F89400397B3D /* Base */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
