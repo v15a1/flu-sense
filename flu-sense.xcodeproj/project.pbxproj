@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B3143DC24D5E55100A88068 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3143DB24D5E55100A88068 /* AppDelegate.swift */; };
+		4B3143DE24D5E55100A88068 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3143DD24D5E55100A88068 /* SceneDelegate.swift */; };
+		4B3143E024D5E55100A88068 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3143DF24D5E55100A88068 /* ViewController.swift */; };
+		4B3143E324D5E55100A88068 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3143E124D5E55100A88068 /* Main.storyboard */; };
+		4B3143E524D5E55300A88068 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B3143E424D5E55300A88068 /* Assets.xcassets */; };
+		4B3143E824D5E55300A88068 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3143E624D5E55300A88068 /* LaunchScreen.storyboard */; };
+		4B3143F324D5E55300A88068 /* flu_senseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3143F224D5E55300A88068 /* flu_senseTests.swift */; };
+		4B3143FE24D5E55300A88068 /* flu_senseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3143FD24D5E55300A88068 /* flu_senseUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4B3143EF24D5E55300A88068 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B3143D024D5E55100A88068 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B3143D724D5E55100A88068;
+			remoteInfo = "flu-sense";
+		};
+		4B3143FA24D5E55300A88068 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B3143D024D5E55100A88068 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B3143D724D5E55100A88068;
+			remoteInfo = "flu-sense";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4B3143D824D5E55100A88068 /* flu-sense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "flu-sense.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B3143DB24D5E55100A88068 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4B3143DD24D5E55100A88068 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		4B3143DF24D5E55100A88068 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4B3143E224D5E55100A88068 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4B3143E424D5E55300A88068 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4B3143E724D5E55300A88068 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4B3143E924D5E55300A88068 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B3143EE24D5E55300A88068 /* flu-senseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "flu-senseTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B3143F224D5E55300A88068 /* flu_senseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flu_senseTests.swift; sourceTree = "<group>"; };
+		4B3143F424D5E55300A88068 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B3143F924D5E55300A88068 /* flu-senseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "flu-senseUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B3143FD24D5E55300A88068 /* flu_senseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flu_senseUITests.swift; sourceTree = "<group>"; };
+		4B3143FF24D5E55300A88068 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B3143D524D5E55100A88068 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B3143EB24D5E55300A88068 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B3143F624D5E55300A88068 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4B3143CF24D5E55100A88068 = {
+			isa = PBXGroup;
+			children = (
+				4B3143DA24D5E55100A88068 /* flu-sense */,
+				4B3143F124D5E55300A88068 /* flu-senseTests */,
+				4B3143FC24D5E55300A88068 /* flu-senseUITests */,
+				4B3143D924D5E55100A88068 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4B3143D924D5E55100A88068 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4B3143D824D5E55100A88068 /* flu-sense.app */,
+				4B3143EE24D5E55300A88068 /* flu-senseTests.xctest */,
+				4B3143F924D5E55300A88068 /* flu-senseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4B3143DA24D5E55100A88068 /* flu-sense */ = {
+			isa = PBXGroup;
+			children = (
+				4B3143DB24D5E55100A88068 /* AppDelegate.swift */,
+				4B3143DD24D5E55100A88068 /* SceneDelegate.swift */,
+				4B3143DF24D5E55100A88068 /* ViewController.swift */,
+				4B3143E124D5E55100A88068 /* Main.storyboard */,
+				4B3143E424D5E55300A88068 /* Assets.xcassets */,
+				4B3143E624D5E55300A88068 /* LaunchScreen.storyboard */,
+				4B3143E924D5E55300A88068 /* Info.plist */,
+			);
+			path = "flu-sense";
+			sourceTree = "<group>";
+		};
+		4B3143F124D5E55300A88068 /* flu-senseTests */ = {
+			isa = PBXGroup;
+			children = (
+				4B3143F224D5E55300A88068 /* flu_senseTests.swift */,
+				4B3143F424D5E55300A88068 /* Info.plist */,
+			);
+			path = "flu-senseTests";
+			sourceTree = "<group>";
+		};
+		4B3143FC24D5E55300A88068 /* flu-senseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4B3143FD24D5E55300A88068 /* flu_senseUITests.swift */,
+				4B3143FF24D5E55300A88068 /* Info.plist */,
+			);
+			path = "flu-senseUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4B3143D724D5E55100A88068 /* flu-sense */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B31440224D5E55300A88068 /* Build configuration list for PBXNativeTarget "flu-sense" */;
+			buildPhases = (
+				4B3143D424D5E55100A88068 /* Sources */,
+				4B3143D524D5E55100A88068 /* Frameworks */,
+				4B3143D624D5E55100A88068 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "flu-sense";
+			productName = "flu-sense";
+			productReference = 4B3143D824D5E55100A88068 /* flu-sense.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4B3143ED24D5E55300A88068 /* flu-senseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B31440524D5E55300A88068 /* Build configuration list for PBXNativeTarget "flu-senseTests" */;
+			buildPhases = (
+				4B3143EA24D5E55300A88068 /* Sources */,
+				4B3143EB24D5E55300A88068 /* Frameworks */,
+				4B3143EC24D5E55300A88068 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B3143F024D5E55300A88068 /* PBXTargetDependency */,
+			);
+			name = "flu-senseTests";
+			productName = "flu-senseTests";
+			productReference = 4B3143EE24D5E55300A88068 /* flu-senseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4B3143F824D5E55300A88068 /* flu-senseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B31440824D5E55300A88068 /* Build configuration list for PBXNativeTarget "flu-senseUITests" */;
+			buildPhases = (
+				4B3143F524D5E55300A88068 /* Sources */,
+				4B3143F624D5E55300A88068 /* Frameworks */,
+				4B3143F724D5E55300A88068 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B3143FB24D5E55300A88068 /* PBXTargetDependency */,
+			);
+			name = "flu-senseUITests";
+			productName = "flu-senseUITests";
+			productReference = 4B3143F924D5E55300A88068 /* flu-senseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4B3143D024D5E55100A88068 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Visal Rajapakse";
+				TargetAttributes = {
+					4B3143D724D5E55100A88068 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					4B3143ED24D5E55300A88068 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 4B3143D724D5E55100A88068;
+					};
+					4B3143F824D5E55300A88068 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 4B3143D724D5E55100A88068;
+					};
+				};
+			};
+			buildConfigurationList = 4B3143D324D5E55100A88068 /* Build configuration list for PBXProject "flu-sense" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4B3143CF24D5E55100A88068;
+			productRefGroup = 4B3143D924D5E55100A88068 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4B3143D724D5E55100A88068 /* flu-sense */,
+				4B3143ED24D5E55300A88068 /* flu-senseTests */,
+				4B3143F824D5E55300A88068 /* flu-senseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B3143D624D5E55100A88068 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B3143E824D5E55300A88068 /* LaunchScreen.storyboard in Resources */,
+				4B3143E524D5E55300A88068 /* Assets.xcassets in Resources */,
+				4B3143E324D5E55100A88068 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B3143EC24D5E55300A88068 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B3143F724D5E55300A88068 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4B3143D424D5E55100A88068 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B3143E024D5E55100A88068 /* ViewController.swift in Sources */,
+				4B3143DC24D5E55100A88068 /* AppDelegate.swift in Sources */,
+				4B3143DE24D5E55100A88068 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B3143EA24D5E55300A88068 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B3143F324D5E55300A88068 /* flu_senseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B3143F524D5E55300A88068 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B3143FE24D5E55300A88068 /* flu_senseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B3143F024D5E55300A88068 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B3143D724D5E55100A88068 /* flu-sense */;
+			targetProxy = 4B3143EF24D5E55300A88068 /* PBXContainerItemProxy */;
+		};
+		4B3143FB24D5E55300A88068 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B3143D724D5E55100A88068 /* flu-sense */;
+			targetProxy = 4B3143FA24D5E55300A88068 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4B3143E124D5E55100A88068 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B3143E224D5E55100A88068 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4B3143E624D5E55300A88068 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4B3143E724D5E55300A88068 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4B31440024D5E55300A88068 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4B31440124D5E55300A88068 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B31440324D5E55300A88068 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "flu-sense/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.visal.lk.flu-sense";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4B31440424D5E55300A88068 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "flu-sense/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.visal.lk.flu-sense";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4B31440624D5E55300A88068 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "flu-senseTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.visal.lk.flu-senseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/flu-sense.app/flu-sense";
+			};
+			name = Debug;
+		};
+		4B31440724D5E55300A88068 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "flu-senseTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.visal.lk.flu-senseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/flu-sense.app/flu-sense";
+			};
+			name = Release;
+		};
+		4B31440924D5E55300A88068 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "flu-senseUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.visal.lk.flu-senseUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "flu-sense";
+			};
+			name = Debug;
+		};
+		4B31440A24D5E55300A88068 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "flu-senseUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.visal.lk.flu-senseUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "flu-sense";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4B3143D324D5E55100A88068 /* Build configuration list for PBXProject "flu-sense" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B31440024D5E55300A88068 /* Debug */,
+				4B31440124D5E55300A88068 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B31440224D5E55300A88068 /* Build configuration list for PBXNativeTarget "flu-sense" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B31440324D5E55300A88068 /* Debug */,
+				4B31440424D5E55300A88068 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B31440524D5E55300A88068 /* Build configuration list for PBXNativeTarget "flu-senseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B31440624D5E55300A88068 /* Debug */,
+				4B31440724D5E55300A88068 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B31440824D5E55300A88068 /* Build configuration list for PBXNativeTarget "flu-senseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B31440924D5E55300A88068 /* Debug */,
+				4B31440A24D5E55300A88068 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4B3143D024D5E55100A88068 /* Project object */;
+}
