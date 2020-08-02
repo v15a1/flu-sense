@@ -6,6 +6,14 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-Heavy.ttf">
+            <string>Gilroy-Heavy</string>
+        </array>
+        <array key="Gilroy-UltraLight.ttf">
+            <string>Gilroy-UltraLight</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -15,22 +23,73 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cm6-KK-ykr">
+                                <rect key="frame" x="-30" y="552" width="110" height="110"/>
+                                <color key="backgroundColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="E7G-MD-bMF"/>
+                                    <constraint firstAttribute="width" constant="110" id="UdI-S4-QFA"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="QZy-pp-KpU"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tsT-tf-BKu">
+                                <rect key="frame" x="264" y="726" width="220" height="220"/>
+                                <color key="backgroundColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="5m6-nz-AZ4"/>
+                                    <constraint firstAttribute="width" constant="220" id="Xve-jj-gaP"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KU8-uf-RlM">
                                 <rect key="frame" x="0.0" y="431" width="414" height="431"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0s-Yg-ETl">
+                                        <rect key="frame" x="0.0" y="25" width="414" height="50"/>
+                                        <fontDescription key="fontDescription" name="Gilroy-Heavy" family="Gilroy-Heavy" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSn-HQ-Qdr">
+                                        <rect key="frame" x="50" y="91" width="314" height="18"/>
+                                        <fontDescription key="fontDescription" name="Gilroy-UltraLight" family="Gilroy-UltraLight" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8NM-1k-Evx" customClass="RightIconButton" customModule="flu_sense" customModuleProvider="target">
+                                        <rect key="frame" x="60" y="291" width="294" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="8ze-dM-L49"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="iSn-HQ-Qdr" firstAttribute="top" secondItem="v0s-Yg-ETl" secondAttribute="bottom" constant="16" id="366-jX-Xag"/>
+                                    <constraint firstItem="v0s-Yg-ETl" firstAttribute="top" secondItem="KU8-uf-RlM" secondAttribute="top" constant="25" id="CGY-jV-eyA"/>
+                                    <constraint firstItem="8NM-1k-Evx" firstAttribute="leading" secondItem="KU8-uf-RlM" secondAttribute="leading" constant="60" id="Id7-Sw-N1v"/>
+                                    <constraint firstAttribute="bottom" secondItem="8NM-1k-Evx" secondAttribute="bottom" constant="80" id="RVT-SN-91c"/>
+                                    <constraint firstAttribute="trailing" secondItem="iSn-HQ-Qdr" secondAttribute="trailing" constant="50" id="SV9-W5-nAM"/>
+                                    <constraint firstItem="iSn-HQ-Qdr" firstAttribute="leading" secondItem="KU8-uf-RlM" secondAttribute="leading" constant="50" id="fcK-tX-Hwq"/>
+                                    <constraint firstAttribute="trailing" secondItem="8NM-1k-Evx" secondAttribute="trailing" constant="60" id="kTg-Yg-xCO"/>
+                                    <constraint firstAttribute="trailing" secondItem="v0s-Yg-ETl" secondAttribute="trailing" id="lOq-0d-xjM"/>
+                                    <constraint firstItem="v0s-Yg-ETl" firstAttribute="leading" secondItem="KU8-uf-RlM" secondAttribute="leading" id="uyb-Az-1ja"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nnd-kQ-yes" customClass="HomePageCustomView" customModule="flu_sense" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="431"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="nnd-kQ-yes" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="2eC-ei-BQa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cm6-KK-ykr" secondAttribute="bottom" constant="200" id="4VO-qD-UER"/>
                             <constraint firstItem="nnd-kQ-yes" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9k4-ws-bWh"/>
                             <constraint firstItem="KU8-uf-RlM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IiO-Bb-pgb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nnd-kQ-yes" secondAttribute="trailing" id="JZg-PC-JG6"/>
+                            <constraint firstAttribute="bottom" secondItem="tsT-tf-BKu" secondAttribute="bottom" constant="-50" id="RPb-xF-wdY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KU8-uf-RlM" secondAttribute="bottom" id="VhD-Ot-ZaQ"/>
+                            <constraint firstItem="cm6-KK-ykr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="-30" id="XJN-kQ-GZE"/>
+                            <constraint firstItem="tsT-tf-BKu" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="70" id="eBk-8B-808"/>
                             <constraint firstItem="KU8-uf-RlM" firstAttribute="height" secondItem="nnd-kQ-yes" secondAttribute="height" id="rIr-rJ-4dk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KU8-uf-RlM" secondAttribute="trailing" id="sgx-ax-IG2"/>
                             <constraint firstItem="KU8-uf-RlM" firstAttribute="width" secondItem="nnd-kQ-yes" secondAttribute="width" id="ssf-Vp-JUB"/>
@@ -38,6 +97,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="bubbleView1" destination="tsT-tf-BKu" id="wg5-l3-nOV"/>
+                        <outlet property="bubbleView2" destination="cm6-KK-ykr" id="T01-4a-kwp"/>
+                        <outlet property="fluDescription" destination="iSn-HQ-Qdr" id="UZC-Hx-tLS"/>
+                        <outlet property="fluNameHeading" destination="v0s-Yg-ETl" id="Tu3-j9-pcf"/>
+                        <outlet property="learnMoreButton" destination="8NM-1k-Evx" id="lZg-5V-vbe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
