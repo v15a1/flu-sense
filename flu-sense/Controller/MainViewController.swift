@@ -17,6 +17,8 @@ class MainViewController: UIViewController {
             learnMoreButton.backgroundColor = ColorName.white.color
             learnMoreButton.buttonLabel.textColor = ColorName.ceruleanBlue.color
             learnMoreButton.buttonImage.tintColor = ColorName.ceruleanBlue.color
+            learnMoreButton.alpha = 0
+            learnMoreButton.transform = CGAffineTransform(translationX: 0, y: 70)
         }
     }
     
@@ -68,7 +70,13 @@ class MainViewController: UIViewController {
         UIView.animate(withDuration: 1.5, delay: 0, options: .curveEaseInOut, animations:  {
             self.fluDescription.alpha = 1
             self.fluDescription.transform = CGAffineTransform(translationX: 0, y: 0)
+        }, completion: { (finished : Bool) in
+            UIView.animate(withDuration: 1,delay: 0,options: .curveEaseOut, animations: {
+                self.learnMoreButton.alpha = 1
+                self.learnMoreButton.transform = CGAffineTransform(translationX: 0, y: 0)
             })
+        })
+        
     }
 
 }
