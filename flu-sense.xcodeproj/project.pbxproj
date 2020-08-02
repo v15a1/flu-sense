@@ -69,6 +69,7 @@
 		4B55DE0024D6A92900B16F19 /* RightIconButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RightIconButton.xib; sourceTree = "<group>"; };
 		4B55DE0224D6A93900B16F19 /* RightIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightIconButton.swift; sourceTree = "<group>"; };
 		4B55DE0424D6AF2700B16F19 /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.ttf"; sourceTree = "<group>"; };
+		4B55DE0524D6B04200B16F19 /* Gilroy-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-SemiBold.ttf"; sourceTree = "<group>"; };
 		4BA0230C24D5F7EF00397B3D /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		4BA0230D24D5F7EF00397B3D /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		4BA0231124D5F89400397B3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -253,6 +254,7 @@
 				4BA0233824D6988400397B3D /* Gilroy-Heavy.ttf */,
 				4BA0233A24D6988500397B3D /* Gilroy-Thin.ttf */,
 				4B55DE0424D6AF2700B16F19 /* Gilroy-Regular.ttf */,
+				4B55DE0524D6B04200B16F19 /* Gilroy-SemiBold.ttf */,
 				4BA0233924D6988400397B3D /* Gilroy-UltraLight.ttf */,
 			);
 			path = Fonts;

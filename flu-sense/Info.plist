@@ -8,6 +8,7 @@
 		<string>Gilroy-Thin.ttf</string>
 		<string>Gilroy-UltraLight.ttf</string>
 		<string>Gilroy-Regular.ttf</string>
+		<string>Gilroy-SemiBold.ttf</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>

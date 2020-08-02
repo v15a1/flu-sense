@@ -15,6 +15,8 @@ class MainViewController: UIViewController {
             learnMoreButton.buttonLabel.text = L10n.learnMoreButtonLabel
             learnMoreButton.layer.cornerRadius = learnMoreButton.frame.height / 2
             learnMoreButton.backgroundColor = ColorName.white.color
+            learnMoreButton.buttonLabel.textColor = ColorName.ceruleanBlue.color
+            learnMoreButton.buttonImage.tintColor = ColorName.ceruleanBlue.color
         }
     }
     
