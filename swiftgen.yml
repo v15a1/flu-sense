@@ -1,0 +1,20 @@
+strings:
+  inputs: flu-sense/Resources
+  outputs:
+    - templateName: structured-swift5
+      output: flu-sense/Resources/Generated/Strings.swift
+xcassets:
+  inputs: flu-sense/Resources/Assets.xcassets
+  outputs:
+    - templateName: swift5
+      output: flu-sense/Resources/Generated/Assets.swift
+colors:
+    paths:
+    - flu-sense/Resources/Colors.txt
+    templateName: swift5
+    output: flu-sense/Resources/Generated/Colors.swift
+#fonts:
+#    paths:
+#    - flu-sense/Resources/Fonts/
+#    templateName: swift4
+#    output: flu-sense/Fonts.swift

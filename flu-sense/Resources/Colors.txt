@@ -1,0 +1,3 @@
+RoyalBlue       : #3D78DF
+White           : #FFFFFF
+CeruleanBlue    : #2F60B5
