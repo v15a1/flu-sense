@@ -83,14 +83,18 @@ class MainViewController: UIViewController {
     
     
     @objc func learnMoreButtonPressed(){
-        print("Learning more")
-        let name = "SymptomsPage"
-        let storyboard = UIStoryboard(name: name, bundle: nil)
-        let identifier = "SymptomsPageViewController"
-        let viewController =
-            storyboard.instantiateViewController(withIdentifier: identifier)
-                as! SymptomsPageViewController
-        self.present(viewController, animated: true, completion: nil)
+//        let name = "SymptomsPage"
+//        let storyboard = UIStoryboard(name: name, bundle: nil)
+//        let identifier = "SymptomsPageViewController"
+//        let viewController =
+//            storyboard.instantiateViewController(withIdentifier: identifier)
+//                as! SymptomsPageViewController
+//        self.present(viewController, animated: true, completion: nil)
+        
+        print(UIStoryboard.Storyboard.SymptomsPage.filename)
+        let storyboard = UIStoryboard(storyboard: .SymptomsPage)
+        let vc : SymptomsPageViewController = storyboard.instantiateViewController()
+        present(vc, animated: true, completion: nil)
     }
 
 }
