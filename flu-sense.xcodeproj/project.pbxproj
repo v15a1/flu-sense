@@ -18,6 +18,11 @@
 		4B55DDFE24D6A1D000B16F19 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B55DDFD24D6A1D000B16F19 /* UILabel+Extension.swift */; };
 		4B55DE0124D6A92900B16F19 /* RightIconButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B55DE0024D6A92900B16F19 /* RightIconButton.xib */; };
 		4B55DE0324D6A93900B16F19 /* RightIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B55DE0224D6A93900B16F19 /* RightIconButton.swift */; };
+		4B55DE0724D6BBFB00B16F19 /* UIStoryBoard+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B55DE0624D6BBFB00B16F19 /* UIStoryBoard+Extension.swift */; };
+		4B55DE0924D6BCD200B16F19 /* SymptomsPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B55DE0824D6BCD200B16F19 /* SymptomsPage.storyboard */; };
+		4B55DE0B24D6BD4400B16F19 /* SymptomsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B55DE0A24D6BD4400B16F19 /* SymptomsPageViewController.swift */; };
+		4B55DE0D24D7EE2B00B16F19 /* SimulatorsList.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4B55DE0C24D7EE2B00B16F19 /* SimulatorsList.txt */; };
+		4B55DE0F24D7EEA600B16F19 /* multipleSimulatorsStartup.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4B55DE0E24D7EEA600B16F19 /* multipleSimulatorsStartup.sh */; };
 		4BA0230E24D5F7EF00397B3D /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0230C24D5F7EF00397B3D /* Assets.swift */; };
 		4BA0230F24D5F7EF00397B3D /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BA0230D24D5F7EF00397B3D /* Strings.swift */; };
 		4BA0231224D5F89400397B3D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4BA0231024D5F89400397B3D /* Localizable.strings */; };
@@ -70,6 +75,11 @@
 		4B55DE0224D6A93900B16F19 /* RightIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightIconButton.swift; sourceTree = "<group>"; };
 		4B55DE0424D6AF2700B16F19 /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-Regular.ttf"; sourceTree = "<group>"; };
 		4B55DE0524D6B04200B16F19 /* Gilroy-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gilroy-SemiBold.ttf"; sourceTree = "<group>"; };
+		4B55DE0624D6BBFB00B16F19 /* UIStoryBoard+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryBoard+Extension.swift"; sourceTree = "<group>"; };
+		4B55DE0824D6BCD200B16F19 /* SymptomsPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SymptomsPage.storyboard; sourceTree = "<group>"; };
+		4B55DE0A24D6BD4400B16F19 /* SymptomsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomsPageViewController.swift; sourceTree = "<group>"; };
+		4B55DE0C24D7EE2B00B16F19 /* SimulatorsList.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = SimulatorsList.txt; sourceTree = "<group>"; };
+		4B55DE0E24D7EEA600B16F19 /* multipleSimulatorsStartup.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = multipleSimulatorsStartup.sh; sourceTree = "<group>"; };
 		4BA0230C24D5F7EF00397B3D /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		4BA0230D24D5F7EF00397B3D /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		4BA0231124D5F89400397B3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -113,6 +123,8 @@
 		4B3143CF24D5E55100A88068 = {
 			isa = PBXGroup;
 			children = (
+				4B55DE0C24D7EE2B00B16F19 /* SimulatorsList.txt */,
+				4B55DE0E24D7EEA600B16F19 /* multipleSimulatorsStartup.sh */,
 				4B3143DA24D5E55100A88068 /* flu-sense */,
 				4B3143F124D5E55300A88068 /* flu-senseTests */,
 				4B3143FC24D5E55300A88068 /* flu-senseUITests */,
@@ -196,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				4B3143DF24D5E55100A88068 /* MainViewController.swift */,
+				4B55DE0A24D6BD4400B16F19 /* SymptomsPageViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -213,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				4B3143E124D5E55100A88068 /* Main.storyboard */,
+				4B55DE0824D6BCD200B16F19 /* SymptomsPage.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -232,6 +246,7 @@
 				4BA0231D24D6027800397B3D /* UIView+Extension.swift */,
 				4B55DDFD24D6A1D000B16F19 /* UILabel+Extension.swift */,
 				4BA0231F24D6085000397B3D /* UIDevice+Extension.swift */,
+				4B55DE0624D6BBFB00B16F19 /* UIStoryBoard+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -270,6 +285,7 @@
 				4B3143D424D5E55100A88068 /* Sources */,
 				4B3143D524D5E55100A88068 /* Frameworks */,
 				4B3143D624D5E55100A88068 /* Resources */,
+				4B55DE1024D7EF8A00B16F19 /* Multiple Simulators */,
 			);
 			buildRules = (
 			);
@@ -371,7 +387,10 @@
 				4B3143E524D5E55300A88068 /* Assets.xcassets in Resources */,
 				4BA0233C24D6988500397B3D /* Gilroy-UltraLight.ttf in Resources */,
 				4BA0231824D6001D00397B3D /* HomePageCustomView.xib in Resources */,
+				4B55DE0D24D7EE2B00B16F19 /* SimulatorsList.txt in Resources */,
 				4BA0233D24D6988500397B3D /* Gilroy-Thin.ttf in Resources */,
+				4B55DE0F24D7EEA600B16F19 /* multipleSimulatorsStartup.sh in Resources */,
+				4B55DE0924D6BCD200B16F19 /* SymptomsPage.storyboard in Resources */,
 				4B3143E324D5E55100A88068 /* Main.storyboard in Resources */,
 				4BA0233B24D6988500397B3D /* Gilroy-Heavy.ttf in Resources */,
 			);
@@ -393,6 +412,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4B55DE1024D7EF8A00B16F19 /* Multiple Simulators */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Multiple Simulators";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\ncustom_sim=`xcrun simctl list | grep 'Custom Simulators' | awk -F'[()]' '{print $2}'`\nif [ ! -z \"${custom_sim}\" ] && [ \"${TARGET_DEVICE_IDENTIFIER}\" = \"${custom_sim}\" ]; then\n/bin/sh multipleSimulatorsStartup.sh\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4B3143D424D5E55100A88068 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -402,11 +442,13 @@
 				4B3143E024D5E55100A88068 /* MainViewController.swift in Sources */,
 				4BA0232E24D6800900397B3D /* Colors.swift in Sources */,
 				4B55DE0324D6A93900B16F19 /* RightIconButton.swift in Sources */,
+				4B55DE0724D6BBFB00B16F19 /* UIStoryBoard+Extension.swift in Sources */,
 				4BA0232024D6085000397B3D /* UIDevice+Extension.swift in Sources */,
 				4BA0231E24D6027800397B3D /* UIView+Extension.swift in Sources */,
 				4B3143DC24D5E55100A88068 /* AppDelegate.swift in Sources */,
 				4BA0230F24D5F7EF00397B3D /* Strings.swift in Sources */,
 				4BA0230E24D5F7EF00397B3D /* Assets.swift in Sources */,
+				4B55DE0B24D6BD4400B16F19 /* SymptomsPageViewController.swift in Sources */,
 				4B3143DE24D5E55100A88068 /* SceneDelegate.swift in Sources */,
 				4BA0232A24D67DBD00397B3D /* Fonts.swift in Sources */,
 				4BA0231A24D6023500397B3D /* HomePageCustomView.swift in Sources */,
@@ -591,6 +633,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FVZ5PWG6VV;
 				INFOPLIST_FILE = "flu-sense/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -608,6 +651,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FVZ5PWG6VV;
 				INFOPLIST_FILE = "flu-sense/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

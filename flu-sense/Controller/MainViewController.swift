@@ -19,6 +19,8 @@ class MainViewController: UIViewController {
             learnMoreButton.buttonImage.tintColor = ColorName.ceruleanBlue.color
             learnMoreButton.alpha = 0
             learnMoreButton.transform = CGAffineTransform(translationX: 0, y: 70)
+            //adding target selector
+            learnMoreButton.rightImageButton.addTarget(self, action: #selector(learnMoreButtonPressed), for: .touchUpInside)
         }
     }
     
@@ -77,6 +79,18 @@ class MainViewController: UIViewController {
             })
         })
         
+    }
+    
+    
+    @objc func learnMoreButtonPressed(){
+        print("Learning more")
+        let name = "SymptomsPage"
+        let storyboard = UIStoryboard(name: name, bundle: nil)
+        let identifier = "SymptomsPageViewController"
+        let viewController =
+            storyboard.instantiateViewController(withIdentifier: identifier)
+                as! SymptomsPageViewController
+        self.present(viewController, animated: true, completion: nil)
     }
 
 }

@@ -28,8 +28,5 @@ class RightIconButton: UIView {
     func configure(){
         fromNib()
     }
-    @IBAction func rightImageButtonPressed(_ sender: Any) {
-        //unused
-    }
     
 }
