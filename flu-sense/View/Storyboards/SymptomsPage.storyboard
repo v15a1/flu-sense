@@ -14,13 +14,27 @@
                     <view key="view" contentMode="scaleToFill" id="JjU-QS-UWd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aFq-Dp-jwl" customClass="CustomNavigationBar" customModule="flu_sense" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
+                                <color key="backgroundColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="U4J-pp-2HR"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="aFq-Dp-jwl" firstAttribute="top" secondItem="JjU-QS-UWd" secondAttribute="top" id="2ND-uC-YAe"/>
+                            <constraint firstItem="aFq-Dp-jwl" firstAttribute="leading" secondItem="zeY-VP-qwE" secondAttribute="leading" id="APH-QZ-ZXM"/>
+                            <constraint firstItem="zeY-VP-qwE" firstAttribute="trailing" secondItem="aFq-Dp-jwl" secondAttribute="trailing" id="Akv-ke-z2L"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="zeY-VP-qwE"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aCH-7I-QQ8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-68" y="70"/>
+            <point key="canvasLocation" x="-68.115942028985515" y="69.642857142857139"/>
         </scene>
     </scenes>
 </document>
