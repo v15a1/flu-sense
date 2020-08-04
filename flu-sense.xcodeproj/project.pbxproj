@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		115C94FC71DC98877A98C78F /* Pods_flu_sense.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44A61494083C7223613D52DD /* Pods_flu_sense.framework */; };
 		4B3143DC24D5E55100A88068 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3143DB24D5E55100A88068 /* AppDelegate.swift */; };
-		4B3143DE24D5E55100A88068 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3143DD24D5E55100A88068 /* SceneDelegate.swift */; };
 		4B3143E024D5E55100A88068 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B3143DF24D5E55100A88068 /* MainViewController.swift */; };
 		4B3143E324D5E55100A88068 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B3143E124D5E55100A88068 /* Main.storyboard */; };
 		4B3143E524D5E55300A88068 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B3143E424D5E55300A88068 /* Assets.xcassets */; };
@@ -25,6 +24,9 @@
 		4B55DE0D24D7EE2B00B16F19 /* SimulatorsList.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4B55DE0C24D7EE2B00B16F19 /* SimulatorsList.txt */; };
 		4B55DE0F24D7EEA600B16F19 /* multipleSimulatorsStartup.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4B55DE0E24D7EEA600B16F19 /* multipleSimulatorsStartup.sh */; };
 		4B802DC024D9546300B9AAE5 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B802DBF24D9546300B9AAE5 /* UICollectionView+Extension.swift */; };
+		4B802DC324D95A5200B9AAE5 /* SymptomsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B802DC124D95A5200B9AAE5 /* SymptomsCollectionViewCell.swift */; };
+		4B802DC424D95A5200B9AAE5 /* SymptomsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B802DC224D95A5200B9AAE5 /* SymptomsCollectionViewCell.xib */; };
+		4B802DC924D9681100B9AAE5 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B802DC824D9681100B9AAE5 /* Coordinator.swift */; };
 		4B9F4AA524D8743200638921 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9F4AA424D8743200638921 /* UIViewController+Extension.swift */; };
 		4B9F4AA824D88A8300638921 /* CustomNavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B9F4AA724D88A8300638921 /* CustomNavigationBar.xib */; };
 		4B9F4AAA24D88AA900638921 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9F4AA924D88AA900638921 /* CustomNavigationBar.swift */; };
@@ -68,7 +70,6 @@
 		44A61494083C7223613D52DD /* Pods_flu_sense.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_flu_sense.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B3143D824D5E55100A88068 /* flu-sense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "flu-sense.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B3143DB24D5E55100A88068 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4B3143DD24D5E55100A88068 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		4B3143DF24D5E55100A88068 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4B3143E224D5E55100A88068 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4B3143E424D5E55300A88068 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -91,6 +92,9 @@
 		4B55DE0C24D7EE2B00B16F19 /* SimulatorsList.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = SimulatorsList.txt; sourceTree = "<group>"; };
 		4B55DE0E24D7EEA600B16F19 /* multipleSimulatorsStartup.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = multipleSimulatorsStartup.sh; sourceTree = "<group>"; };
 		4B802DBF24D9546300B9AAE5 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		4B802DC124D95A5200B9AAE5 /* SymptomsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomsCollectionViewCell.swift; sourceTree = "<group>"; };
+		4B802DC224D95A5200B9AAE5 /* SymptomsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SymptomsCollectionViewCell.xib; sourceTree = "<group>"; };
+		4B802DC824D9681100B9AAE5 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		4B9F4AA424D8743200638921 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		4B9F4AA724D88A8300638921 /* CustomNavigationBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomNavigationBar.xib; sourceTree = "<group>"; };
 		4B9F4AA924D88AA900638921 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
@@ -220,11 +224,36 @@
 			path = RightIconButton;
 			sourceTree = "<group>";
 		};
+		4B802DC524D95A5800B9AAE5 /* SymptomCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				4B802DC124D95A5200B9AAE5 /* SymptomsCollectionViewCell.swift */,
+				4B802DC224D95A5200B9AAE5 /* SymptomsCollectionViewCell.xib */,
+			);
+			path = SymptomCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		4B802DC624D95A6E00B9AAE5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				4B802DC724D95A7A00B9AAE5 /* CollectionViewCells */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		4B802DC724D95A7A00B9AAE5 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				4B802DC524D95A5800B9AAE5 /* SymptomCollectionViewCell */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
 		4B9F4AA624D88A5300638921 /* App */ = {
 			isa = PBXGroup;
 			children = (
 				4B3143DB24D5E55100A88068 /* AppDelegate.swift */,
-				4B3143DD24D5E55100A88068 /* SceneDelegate.swift */,
+				4B802DC824D9681100B9AAE5 /* Coordinator.swift */,
 				4B3143E624D5E55300A88068 /* LaunchScreen.storyboard */,
 			);
 			path = App;
@@ -274,6 +303,7 @@
 				4B55DDFF24D6A90D00B16F19 /* RightIconButton */,
 				4BA0231B24D6023A00397B3D /* HomePageWaveView */,
 				4B9F4AAB24D88AAE00638921 /* CustomNavigationBar */,
+				4B802DC624D95A6E00B9AAE5 /* Cells */,
 			);
 			path = UIWidgets;
 			sourceTree = "<group>";
@@ -462,6 +492,7 @@
 				4BA0231824D6001D00397B3D /* HomePageCustomView.xib in Resources */,
 				4B55DE0D24D7EE2B00B16F19 /* SimulatorsList.txt in Resources */,
 				4BA0233D24D6988500397B3D /* Gilroy-Thin.ttf in Resources */,
+				4B802DC424D95A5200B9AAE5 /* SymptomsCollectionViewCell.xib in Resources */,
 				4B55DE0F24D7EEA600B16F19 /* multipleSimulatorsStartup.sh in Resources */,
 				4B55DE0924D6BCD200B16F19 /* SymptomsPage.storyboard in Resources */,
 				4B3143E324D5E55100A88068 /* Main.storyboard in Resources */,
@@ -618,6 +649,8 @@
 				4B9F4AA524D8743200638921 /* UIViewController+Extension.swift in Sources */,
 				4B9F4AAA24D88AA900638921 /* CustomNavigationBar.swift in Sources */,
 				4B55DE0324D6A93900B16F19 /* RightIconButton.swift in Sources */,
+				4B802DC924D9681100B9AAE5 /* Coordinator.swift in Sources */,
+				4B802DC324D95A5200B9AAE5 /* SymptomsCollectionViewCell.swift in Sources */,
 				4B55DE0724D6BBFB00B16F19 /* UIStoryBoard+Extension.swift in Sources */,
 				4BA0232024D6085000397B3D /* UIDevice+Extension.swift in Sources */,
 				4BA0231E24D6027800397B3D /* UIView+Extension.swift in Sources */,
@@ -625,7 +658,6 @@
 				4BA0230F24D5F7EF00397B3D /* Strings.swift in Sources */,
 				4BA0230E24D5F7EF00397B3D /* Assets.swift in Sources */,
 				4B55DE0B24D6BD4400B16F19 /* SymptomsPageViewController.swift in Sources */,
-				4B3143DE24D5E55100A88068 /* SceneDelegate.swift in Sources */,
 				4BA0232A24D67DBD00397B3D /* Fonts.swift in Sources */,
 				4BA0231A24D6023500397B3D /* HomePageCustomView.swift in Sources */,
 				4B802DC024D9546300B9AAE5 /* UICollectionView+Extension.swift in Sources */,

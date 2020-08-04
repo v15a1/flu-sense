@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import AnimatedCollectionViewLayout
 
 class SymptomsPageViewController: UIViewController {
-
+    
+    let screenSize: CGRect = UIScreen.main.bounds
+    
     @IBOutlet weak var pageHeading: UILabel! {
         didSet{
             self.pageHeading.text = L10n.symptomsPageHeading
@@ -22,7 +25,21 @@ class SymptomsPageViewController: UIViewController {
         }
     }
     
-    @IBOutlet weak var symptomCollectionView: UICollectionView!
+    @IBOutlet weak var symptomCollectionView: UICollectionView!{
+        didSet{
+           let layout = AnimatedCollectionViewLayout()
+            layout.animator = LinearCardAttributesAnimator()
+            layout.scrollDirection = .horizontal
+            self.symptomCollectionView.collectionViewLayout = layout
+
+            self.symptomCollectionView.showsHorizontalScrollIndicator = false
+            self.symptomCollectionView.showsVerticalScrollIndicator = false
+            self.symptomCollectionView.delegate = self
+            self.symptomCollectionView.dataSource = self
+            //registering Nib
+            self.symptomCollectionView.registerNib(forCell: SymptomsCollectionViewCell.self)
+        }
+    }
     
     @IBOutlet weak var customNavbarHeightConstraint: NSLayoutConstraint!{
         didSet{
@@ -40,7 +57,7 @@ class SymptomsPageViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 }
@@ -53,8 +70,31 @@ extension SymptomsPageViewController : UICollectionViewDelegate, UICollectionVie
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        <#code#>
+        let cell : SymptomsCollectionViewCell = collectionView.dequeueReusableCell(SymptomsCollectionViewCell.self, for: indexPath)
+    
+
+        return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: screenSize.width * 0.8, height: collectionView.frame.height * 1.3)
+    }
+//
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+//        return screenSize.width * 0.13
+//    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+
+        let cellInset = screenSize.width * 0.1
+        return UIEdgeInsets(top: 0, left: cellInset, bottom: 0, right: cellInset )
+    }
+    
+//    func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
+//        //let cell = collectionView.cellForItem(at: indexPath)?.isHighlighted = true
+//        return true
+//    }
+
     
 }
+

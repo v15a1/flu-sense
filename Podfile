@@ -5,8 +5,9 @@ target 'flu-sense' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for flu-sense
-pod 'lottie-ios'
+  pod 'lottie-ios'
+  pod 'AnimatedCollectionViewLayout'
+
 
 
   target 'flu-senseTests' do
