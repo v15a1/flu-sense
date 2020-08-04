@@ -6,6 +6,8 @@ target 'flu-sense' do
   use_frameworks!
 
   # Pods for flu-sense
+pod 'lottie-ios'
+
 
   target 'flu-senseTests' do
     inherit! :search_paths

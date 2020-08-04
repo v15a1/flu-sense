@@ -1,36 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9AX-ZJ-f5D">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Gilroy-SemiBold.ttf">
+            <string>Gilroy-SemiBold</string>
+        </array>
+        <array key="Gilroy-UltraLight.ttf">
+            <string>Gilroy-UltraLight</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Symptoms Page View Controller-->
         <scene sceneID="aNX-DM-r3f">
             <objects>
-                <viewController storyboardIdentifier="SymptomsPageViewController" id="9AX-ZJ-f5D" customClass="SymptomsPageViewController" customModule="flu_sense" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SymptomsPageViewController" modalPresentationStyle="fullScreen" id="9AX-ZJ-f5D" customClass="SymptomsPageViewController" customModule="flu_sense" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JjU-QS-UWd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aFq-Dp-jwl" customClass="CustomNavigationBar" customModule="flu_sense" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
-                                <color key="backgroundColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="110" id="U4J-pp-2HR"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RjO-dr-FV1">
+                                <rect key="frame" x="20" y="155" width="374" height="32"/>
+                                <fontDescription key="fontDescription" name="Gilroy-SemiBold" family="Gilroy-SemiBold" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXW-Wv-UtL">
+                                <rect key="frame" x="20" y="207" width="374" height="17"/>
+                                <fontDescription key="fontDescription" name="Gilroy-UltraLight" family="Gilroy-UltraLight" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cbl-0O-E6d">
+                                <rect key="frame" x="40" y="717" width="334" height="125"/>
+                                <color key="backgroundColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="LNR-ll-hwr"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="NTX-m7-03N">
+                                <rect key="frame" x="0.0" y="264" width="414" height="413"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aTx-Zs-cp9">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="J1I-DJ-rkd">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="a4c-fe-FFr">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="aFq-Dp-jwl" firstAttribute="top" secondItem="JjU-QS-UWd" secondAttribute="top" id="2ND-uC-YAe"/>
+                            <constraint firstItem="RjO-dr-FV1" firstAttribute="top" secondItem="aFq-Dp-jwl" secondAttribute="bottom" constant="45" id="4Kd-x8-Dpp"/>
+                            <constraint firstItem="NTX-m7-03N" firstAttribute="top" secondItem="rXW-Wv-UtL" secondAttribute="bottom" constant="40" id="7dB-5S-bfn"/>
                             <constraint firstItem="aFq-Dp-jwl" firstAttribute="leading" secondItem="zeY-VP-qwE" secondAttribute="leading" id="APH-QZ-ZXM"/>
                             <constraint firstItem="zeY-VP-qwE" firstAttribute="trailing" secondItem="aFq-Dp-jwl" secondAttribute="trailing" id="Akv-ke-z2L"/>
+                            <constraint firstItem="cbl-0O-E6d" firstAttribute="leading" secondItem="zeY-VP-qwE" secondAttribute="leading" constant="40" id="LZd-Xg-cPR"/>
+                            <constraint firstItem="NTX-m7-03N" firstAttribute="trailing" secondItem="zeY-VP-qwE" secondAttribute="trailing" id="Nur-Ic-OEi"/>
+                            <constraint firstItem="NTX-m7-03N" firstAttribute="leading" secondItem="zeY-VP-qwE" secondAttribute="leading" id="Ofe-qW-bmk"/>
+                            <constraint firstItem="rXW-Wv-UtL" firstAttribute="top" secondItem="RjO-dr-FV1" secondAttribute="bottom" constant="20" id="P2m-9F-oTC"/>
+                            <constraint firstItem="zeY-VP-qwE" firstAttribute="bottom" secondItem="cbl-0O-E6d" secondAttribute="bottom" constant="20" id="g17-kR-XnS"/>
+                            <constraint firstItem="zeY-VP-qwE" firstAttribute="trailing" secondItem="cbl-0O-E6d" secondAttribute="trailing" constant="40" id="gSJ-5Q-Bzx"/>
+                            <constraint firstItem="RjO-dr-FV1" firstAttribute="leading" secondItem="zeY-VP-qwE" secondAttribute="leading" constant="20" id="gsI-I5-MAs"/>
+                            <constraint firstItem="cbl-0O-E6d" firstAttribute="top" secondItem="NTX-m7-03N" secondAttribute="bottom" constant="40" id="ihU-l0-XUg"/>
+                            <constraint firstItem="cbl-0O-E6d" firstAttribute="top" secondItem="NTX-m7-03N" secondAttribute="bottom" constant="40" id="l8t-9v-p7v"/>
+                            <constraint firstItem="rXW-Wv-UtL" firstAttribute="leading" secondItem="zeY-VP-qwE" secondAttribute="leading" constant="20" id="m8h-an-NMM"/>
+                            <constraint firstItem="zeY-VP-qwE" firstAttribute="trailing" secondItem="rXW-Wv-UtL" secondAttribute="trailing" constant="20" id="vOh-Mi-0Mj"/>
+                            <constraint firstItem="zeY-VP-qwE" firstAttribute="trailing" secondItem="RjO-dr-FV1" secondAttribute="trailing" constant="20" id="yxa-Ga-Zza"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zeY-VP-qwE"/>
                     </view>
+                    <connections>
+                        <outlet property="customNavBar" destination="aFq-Dp-jwl" id="dGE-RT-EOf"/>
+                        <outlet property="customNavbarHeightConstraint" destination="U4J-pp-2HR" id="KEu-ha-8gy"/>
+                        <outlet property="pageHeading" destination="RjO-dr-FV1" id="nlB-92-Mf9"/>
+                        <outlet property="symtomCollectionView" destination="NTX-m7-03N" id="dXq-PK-Onq"/>
+                        <outlet property="symtomCount" destination="rXW-Wv-UtL" id="JYg-Iy-FbY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aCH-7I-QQ8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

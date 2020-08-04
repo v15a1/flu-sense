@@ -51,6 +51,8 @@ class HomePageCustomView: UIView {
         path.close()
         let shapeLayer = CAShapeLayer()
         shapeLayer.path = path.cgPath
-        self.layer.mask = shapeLayer    }
+        self.layer.mask = shapeLayer
+        
+    }
     
 }

@@ -10,21 +10,41 @@ import UIKit
 
 class SymptomsPageViewController: UIViewController {
 
+    @IBOutlet weak var pageHeading: UILabel!
+    @IBOutlet weak var symtomCount: UILabel!
+    @IBOutlet weak var symtomCollectionView: UICollectionView!
+    
+    @IBOutlet weak var customNavbarHeightConstraint: NSLayoutConstraint!{
+        didSet{
+            if UIDevice().userInterfaceIdiom == .phone{
+                self.customNavbarHeightConstraint.constant = UIDevice.getHeaderImageHeightForCurrentDevice(UIDevice())()
+            }
+        }
+    }
+    
+    @IBOutlet weak var customNavBar: CustomNavigationBar!{
+        didSet{
+            self.customNavBar.rightNavigationButton.setImage(Asset.bell.image, for: .normal)
+            self.customNavBar.leftNavigationButton.setImage(Asset.menu.image, for: .normal)
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+}
+
+
+extension SymptomsPageViewController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        <#code#>
     }
-    */
-
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        <#code#>
+    }
+    
+    
 }

@@ -16,11 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         //runtime initial screen
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        let mainSB = UIStoryboard(storyboard: .SymptomsPage)
-        let mainVC : SymptomsPageViewController? = mainSB.instantiateViewController(identifier: SymptomsPageViewController.storyboardIdentifier)
-        self.window?.rootViewController = mainVC
-        self.window?.makeKeyAndVisible()
+
         
         return true
     }

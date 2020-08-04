@@ -43,5 +43,16 @@ extension UIDevice {
             return .unknown
         }
     }
+    
+    func getHeaderImageHeightForCurrentDevice() -> CGFloat {
+      switch UIScreen.main.nativeBounds.height {
+      case 2436: // iPhone X
+        return 110
+      case 1792:
+        return 110
+      default: // Every other iPhone
+        return 80
+      }
+    }
 
 }

@@ -7,16 +7,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Gilroy-UltraLight.ttf">
-            <string>Gilroy-UltraLight</string>
+        <array key="Gilroy-Regular.ttf">
+            <string>Gilroy-Regular</string>
         </array>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomNavigationBar" customModule="flu_sense" customModuleProvider="target">
             <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="c7V-gZ-1UO"/>
                 <outlet property="leftNavigationButton" destination="s4a-Lc-Mpe" id="1nI-nj-0lG"/>
                 <outlet property="navbarHeading" destination="uim-hk-CFr" id="dOg-f1-R6q"/>
-                <outlet property="navigationCircleView" destination="0rI-H1-6vN" id="yY1-Xs-cwi"/>
                 <outlet property="rightNavigationButton" destination="4aB-EE-Q38" id="t5j-eU-pvL"/>
             </connections>
         </placeholder>
@@ -27,28 +27,20 @@
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4a-Lc-Mpe">
                     <rect key="frame" x="30" y="48" width="30" height="30"/>
-                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="McG-0y-VqN"/>
                         <constraint firstAttribute="width" constant="30" id="qCr-Rd-fzv"/>
                     </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </button>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0rI-H1-6vN">
-                    <rect key="frame" x="-50" y="-40" width="166" height="166"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                    <constraints>
-                        <constraint firstAttribute="width" secondItem="0rI-H1-6vN" secondAttribute="height" multiplier="1:1" id="f8r-g6-haC"/>
-                    </constraints>
-                </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uim-hk-CFr">
-                    <rect key="frame" x="221" y="54" width="47" height="18"/>
-                    <fontDescription key="fontDescription" name="Gilroy-UltraLight" family="Gilroy-UltraLight" pointSize="18"/>
+                    <rect key="frame" x="222" y="54" width="45.5" height="18"/>
+                    <fontDescription key="fontDescription" name="Gilroy-Regular" family="Gilroy-Regular" pointSize="18"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aB-EE-Q38">
                     <rect key="frame" x="429" y="48" width="30" height="30"/>
-                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="IKd-in-BlH"/>
                         <constraint firstAttribute="width" constant="30" id="uEf-tR-71x"/>
@@ -56,21 +48,16 @@
                 </button>
             </subviews>
             <constraints>
-                <constraint firstItem="0rI-H1-6vN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-40" id="5BP-kz-cie"/>
-                <constraint firstItem="0rI-H1-6vN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="-50" id="86p-f1-u8u"/>
-                <constraint firstItem="0rI-H1-6vN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="-40" id="Iw9-Fa-qpb"/>
                 <constraint firstItem="s4a-Lc-Mpe" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="LJV-Zf-hmk"/>
                 <constraint firstItem="s4a-Lc-Mpe" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="efT-Rf-BcU"/>
-                <constraint firstItem="0rI-H1-6vN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="-50" id="gz1-33-UrK"/>
-                <constraint firstAttribute="bottom" secondItem="0rI-H1-6vN" secondAttribute="bottom" id="i0k-BX-RvB"/>
                 <constraint firstItem="4aB-EE-Q38" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="kry-RF-XSx"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="4aB-EE-Q38" secondAttribute="trailing" constant="30" id="nJh-D8-YQL"/>
+                <constraint firstAttribute="trailing" secondItem="4aB-EE-Q38" secondAttribute="trailing" constant="30" id="lMa-e2-UCq"/>
                 <constraint firstItem="uim-hk-CFr" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="qJT-xw-WpA"/>
                 <constraint firstItem="uim-hk-CFr" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="rMc-2n-d7q"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <point key="canvasLocation" x="192.0289855072464" y="307.36607142857139"/>
+            <point key="canvasLocation" x="192.0289855072464" y="306.69642857142856"/>
         </view>
     </objects>
 </document>
