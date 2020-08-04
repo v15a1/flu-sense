@@ -18,6 +18,8 @@ internal enum L10n {
   internal static let greeting = L10n.tr("Localizable", "greeting")
   /// Learn More
   internal static let learnMoreButtonLabel = L10n.tr("Localizable", "learn_more_button_label")
+  /// Symptoms
+  internal static let symptomsPageHeading = L10n.tr("Localizable", "symptoms_page_heading")
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name

@@ -96,8 +96,8 @@
                         <outlet property="customNavBar" destination="aFq-Dp-jwl" id="dGE-RT-EOf"/>
                         <outlet property="customNavbarHeightConstraint" destination="U4J-pp-2HR" id="KEu-ha-8gy"/>
                         <outlet property="pageHeading" destination="RjO-dr-FV1" id="nlB-92-Mf9"/>
-                        <outlet property="symtomCollectionView" destination="NTX-m7-03N" id="dXq-PK-Onq"/>
-                        <outlet property="symtomCount" destination="rXW-Wv-UtL" id="JYg-Iy-FbY"/>
+                        <outlet property="symptomCollectionView" destination="NTX-m7-03N" id="dXq-PK-Onq"/>
+                        <outlet property="symptomCount" destination="rXW-Wv-UtL" id="JYg-Iy-FbY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aCH-7I-QQ8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -10,4 +10,5 @@
 "flu_name" = "COVID - 19";
 "flu_description" = "Corona viruses are a large grub of viruses that can cause illness in animals and humans";
 "learn_more_button_label" = "Learn More";
+"symptoms_page_heading" = "Symptoms";
 

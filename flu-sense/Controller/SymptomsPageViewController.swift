@@ -10,9 +10,19 @@ import UIKit
 
 class SymptomsPageViewController: UIViewController {
 
-    @IBOutlet weak var pageHeading: UILabel!
-    @IBOutlet weak var symtomCount: UILabel!
-    @IBOutlet weak var symtomCollectionView: UICollectionView!
+    @IBOutlet weak var pageHeading: UILabel! {
+        didSet{
+            self.pageHeading.text = L10n.symptomsPageHeading
+        }
+    }
+    
+    @IBOutlet weak var symptomCount: UILabel! {
+        didSet{
+            self.symptomCount.text = "1/6"
+        }
+    }
+    
+    @IBOutlet weak var symptomCollectionView: UICollectionView!
     
     @IBOutlet weak var customNavbarHeightConstraint: NSLayoutConstraint!{
         didSet{
@@ -39,7 +49,7 @@ class SymptomsPageViewController: UIViewController {
 extension SymptomsPageViewController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        <#code#>
+        return 6
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

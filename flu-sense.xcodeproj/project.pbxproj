@@ -24,6 +24,7 @@
 		4B55DE0B24D6BD4400B16F19 /* SymptomsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B55DE0A24D6BD4400B16F19 /* SymptomsPageViewController.swift */; };
 		4B55DE0D24D7EE2B00B16F19 /* SimulatorsList.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4B55DE0C24D7EE2B00B16F19 /* SimulatorsList.txt */; };
 		4B55DE0F24D7EEA600B16F19 /* multipleSimulatorsStartup.sh in Resources */ = {isa = PBXBuildFile; fileRef = 4B55DE0E24D7EEA600B16F19 /* multipleSimulatorsStartup.sh */; };
+		4B802DC024D9546300B9AAE5 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B802DBF24D9546300B9AAE5 /* UICollectionView+Extension.swift */; };
 		4B9F4AA524D8743200638921 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9F4AA424D8743200638921 /* UIViewController+Extension.swift */; };
 		4B9F4AA824D88A8300638921 /* CustomNavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B9F4AA724D88A8300638921 /* CustomNavigationBar.xib */; };
 		4B9F4AAA24D88AA900638921 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B9F4AA924D88AA900638921 /* CustomNavigationBar.swift */; };
@@ -89,6 +90,7 @@
 		4B55DE0A24D6BD4400B16F19 /* SymptomsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomsPageViewController.swift; sourceTree = "<group>"; };
 		4B55DE0C24D7EE2B00B16F19 /* SimulatorsList.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = SimulatorsList.txt; sourceTree = "<group>"; };
 		4B55DE0E24D7EEA600B16F19 /* multipleSimulatorsStartup.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = multipleSimulatorsStartup.sh; sourceTree = "<group>"; };
+		4B802DBF24D9546300B9AAE5 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
 		4B9F4AA424D8743200638921 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		4B9F4AA724D88A8300638921 /* CustomNavigationBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomNavigationBar.xib; sourceTree = "<group>"; };
 		4B9F4AA924D88AA900638921 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
@@ -302,6 +304,7 @@
 				4BA0231F24D6085000397B3D /* UIDevice+Extension.swift */,
 				4B55DE0624D6BBFB00B16F19 /* UIStoryBoard+Extension.swift */,
 				4B9F4AA424D8743200638921 /* UIViewController+Extension.swift */,
+				4B802DBF24D9546300B9AAE5 /* UICollectionView+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -625,6 +628,7 @@
 				4B3143DE24D5E55100A88068 /* SceneDelegate.swift in Sources */,
 				4BA0232A24D67DBD00397B3D /* Fonts.swift in Sources */,
 				4BA0231A24D6023500397B3D /* HomePageCustomView.swift in Sources */,
+				4B802DC024D9546300B9AAE5 /* UICollectionView+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
